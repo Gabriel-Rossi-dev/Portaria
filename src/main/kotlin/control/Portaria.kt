@@ -1,60 +1,37 @@
 package control
 
+import business.ConvidadoBusiness
+import entity.Convite
+
 
 class Portaria {
 
+    private val convidadoBusiness = ConvidadoBusiness()
+
     init {
         println("Portaria Inicializada")
-        controle()
+        println(controle())
     }
 
-    private fun controle() {
+    private fun controle(): String {
         val idade = Console.readInt("Qual sua idade? ")
-        println(idade)
-        if (idade < 18) {
-            println("Negado. Menores de idade não são permitidos.")
-            return
+        if (!convidadoBusiness.maiorDeIdade(idade)) {
+            return ("Negado. Menores de idade não são permitidos.")
+
         }
+
         val tipoConvite = Console.readString("Qual o tipo de convite? ")
-        println(tipoConvite)
+        if (!convidadoBusiness.tipoValido(tipoConvite)) {
+            return "Negado. Convite inválido."
+        }
 
+
+        val codigo = Console.readString("Qual o codigo de convite? ")
+        val convidado = Convite(tipoConvite, codigo, idade)
+        if (!convidadoBusiness.convidadoValido(convidado)) {
+            return "Negado. Convite inválido."
+        }
+        return "Welcome! :)"
     }
 }
 
-// Função control.portaria usada para consulta
-
-fun portaria() {
-    /*print("Qual sua idade? ")
-    val idade = readLine()
-    if (idade != null && idade != "") {
-        if (idade.toInt() < 18) {
-            println("Negado. Menores de idade não são permitidos.")
-            return
-        }
-    }
-
-     */
-    print("Qual é o tipo de convite? ")
-    var tipoConvite = readLine()
-    if (tipoConvite != null && tipoConvite != "") {
-        tipoConvite = tipoConvite.lowercase()
-        // Validação do tipo de convite
-        if (tipoConvite != "comum" && tipoConvite != "premium" && tipoConvite != "luxo") {
-            println("Negado. entity.Convite inválido.")
-            return
-        }
-        print("Qual o código do convite? ")
-        var codigo = readLine()
-        if (codigo != null && codigo != "") {
-            codigo = codigo.lowercase()
-            if (tipoConvite == "comum" && codigo.startsWith("xt")) {
-                println("Welcome :)")
-            } else if ((tipoConvite == "premium" || tipoConvite == "luxo") && codigo.startsWith("xl")
-            ) {
-                println("Welcome :)")
-            } else {
-                println("Negado. entity.Convite inválido")
-            }
-        }
-    }
-}

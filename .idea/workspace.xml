@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b5ce831-147a-4154-a405-4f7d498d71b6" name="Changes" comment="" />
+    <list default="true" id="9b5ce831-147a-4154-a405-4f7d498d71b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/business/ConvidadoBusiness.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/Console.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/Console.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/Portaria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/Portaria.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Convite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Convite.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Pessoa.kt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,17 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\PROJETOS CURSO UDEMY KOTLIN\Porientadaobjetos" />
+      <recent name="C:\workspace\PROJETOS CURSO UDEMY KOTLIN\Porientadaobjetos\src\main" />
       <recent name="C:\workspace\PROJETOS CURSO UDEMY KOTLIN\Porientadaobjetos\src\main\kotlin\control" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">

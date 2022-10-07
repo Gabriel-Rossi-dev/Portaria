@@ -28,7 +28,7 @@ class Console private constructor() {
         fun readString(msg: String): String {
             var code: String? = null
             do {
-                println(msg)
+                print(msg)
                 val info = readLine()
 
                 if (info != null && info != "") {

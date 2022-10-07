@@ -1,4 +1,3 @@
 package entity
 
-class Convite(val tipo: String, val codigo: String) {
-}
+class Convite(val tipo: String, val codigo: String, val idade: Int)
