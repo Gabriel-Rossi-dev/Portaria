@@ -1,6 +1,6 @@
 package business
 
-import entity.Convite
+import entity.Convidado
 
 class ConvidadoBusiness {
 
@@ -8,9 +8,9 @@ class ConvidadoBusiness {
 
     fun tipoValido(tipo: String) = (tipo == "comum" || tipo == "premium" || tipo == "luxo")
 
-    fun convidadoValido(convite: Convite) = when (convite.tipo) {
-        "comum" -> convite.codigo.startsWith("xt")
-        "luxo", "premium" -> convite.codigo.startsWith("xl")
+    fun convidadoValido(convidado: Convidado) = when (convidado.tipo) {
+        "comum" -> convidado.codigo.startsWith("xt")
+        "luxo", "premium" -> convidado.codigo.startsWith("xl")
         else -> false
     }
 }

@@ -1,7 +1,7 @@
 package control
 
 import business.ConvidadoBusiness
-import entity.Convite
+import entity.Convidado
 
 
 class Portaria {
@@ -15,19 +15,20 @@ class Portaria {
 
     private fun controle(): String {
         val idade = Console.readInt("Qual sua idade? ")
+        val convidado = Convidado(idade = idade)
+
         if (!convidadoBusiness.maiorDeIdade(idade)) {
             return ("Negado. Menores de idade não são permitidos.")
 
         }
 
-        val tipoConvite = Console.readString("Qual o tipo de convite? ")
-        if (!convidadoBusiness.tipoValido(tipoConvite)) {
+        convidado.tipo = Console.readString("Qual o tipo de convite? ")
+        if (!convidadoBusiness.tipoValido(convidado.tipo)) {
             return "Negado. Convite inválido."
         }
 
 
-        val codigo = Console.readString("Qual o codigo de convite? ")
-        val convidado = Convite(tipoConvite, codigo, idade)
+        convidado.codigo = Console.readString("Qual o codigo de convite? ")
         if (!convidadoBusiness.convidadoValido(convidado)) {
             return "Negado. Convite inválido."
         }

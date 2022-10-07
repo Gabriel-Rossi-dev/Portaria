@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b5ce831-147a-4154-a405-4f7d498d71b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/business/ConvidadoBusiness.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/Console.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/Console.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/business/ConvidadoBusiness.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/business/ConvidadoBusiness.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/control/Portaria.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/control/Portaria.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Convite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Convite.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Pessoa.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entity/Convite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entity/Convidado.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
